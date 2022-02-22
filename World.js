@@ -43,7 +43,7 @@ const sideWallGeometry = new THREE.PlaneGeometry(1000, 20);
 const flatWallGeometry = new THREE.PlaneGeometry(20, 1000);
 const cubeGeometry = new THREE.BoxGeometry(5, 5, 5)
 
-const wallMaterial = new THREE.MeshStandardMaterial({color: 0xa4a4a4, side: THREE.FrontSide});
+const wallMaterial = new THREE.MeshStandardMaterial({color: 0xa4a4a4, side: THREE.FrontSide, reflectivity: 0.75});
 const cubeMaterial = new THREE.MeshStandardMaterial({color: 0x00ff00})
 
 var wallTop = new THREE.Mesh(flatWallGeometry, wallMaterial);
