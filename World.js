@@ -38,32 +38,99 @@ Lights.add(light11);
 
 scene.add(Lights);
 
-//Objects
-const sideWallGeometry = new THREE.PlaneGeometry(1000, 20);
-const flatWallGeometry = new THREE.PlaneGeometry(20, 1000);
-const cubeGeometry = new THREE.BoxGeometry(5, 5, 5)
 
-const wallMaterial = new THREE.MeshStandardMaterial({color: 0xa4a4a4, side: THREE.FrontSide, reflectivity: 0.75});
-const cubeMaterial = new THREE.MeshStandardMaterial({color: 0x00ff00})
+//Lockers
+var Lockers = new THREE.Group();
+
+const lockerGeometry = new THREE.BoxGeometry(1, 6, 0.9)
+const lockerMaterial = new THREE.MeshStandardMaterial({color: 0x404040, Metalness: 100, Roughness: 0.60})
+
+var locker1Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker1Left.position.set(5.5, 3, 11);
+Lockers.add(locker1Left);
+var locker2Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker2Left.position.set(5.5, 3, 12);
+Lockers.add(locker2Left);
+var locker3Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker3Left.position.set(5.5, 3, 13);
+Lockers.add(locker3Left);
+var locker4Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker4Left.position.set(5.5, 3, 14);
+Lockers.add(locker4Left);
+var locker5Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker5Left.position.set(5.5, 3, 15);
+Lockers.add(locker5Left);
+var locker6Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker6Left.position.set(5.5, 3, 16);
+Lockers.add(locker6Left);
+var locker7Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker7Left.position.set(5.5, 3, 17);
+Lockers.add(locker7Left);
+var locker8Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker8Left.position.set(5.5, 3, 18);
+Lockers.add(locker8Left);
+var locker9Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker9Left.position.set(5.5, 3, 19);
+Lockers.add(locker9Left);
+var locker10Left = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker10Left.position.set(5.5, 3, 20);
+Lockers.add(locker10Left);
+
+var locker1Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker1Right.position.set(-5.5, 3, 11);
+Lockers.add(locker1Right);
+var locker2Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker2Right.position.set(-5.5, 3, 12);
+Lockers.add(locker2Right);
+var locker3Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker3Right.position.set(-5.5, 3, 13);
+Lockers.add(locker3Right);
+var locker4Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker4Right.position.set(-5.5, 3, 14);
+Lockers.add(locker4Right);
+var locker5Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker5Right.position.set(-5.5, 3, 15);
+Lockers.add(locker5Right);
+var locker6Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker6Right.position.set(-5.5, 3, 16);
+Lockers.add(locker6Right);
+var locker7Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker7Right.position.set(-5.5, 3, 17);
+Lockers.add(locker7Right);
+var locker8Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker8Right.position.set(-5.5, 3, 18);
+Lockers.add(locker8Right);
+var locker9Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker9Right.position.set(-5.5, 3, 19);
+Lockers.add(locker9Right);
+var locker10Right = new THREE.Mesh(lockerGeometry, lockerMaterial);
+locker10Right.position.set(-5.5, 3, 20);
+Lockers.add(locker10Right);
+
+scene.add(Lockers);
+
+
+//Objects
+const sideWallGeometry = new THREE.PlaneGeometry(1000, 8.333);
+const flatWallGeometry = new THREE.PlaneGeometry(12, 1000);
+
+const wallMaterial = new THREE.MeshStandardMaterial({color: 0xa4a4a4, side: THREE.FrontSide});
 
 var wallTop = new THREE.Mesh(flatWallGeometry, wallMaterial);
 var wallBottom = new THREE.Mesh(flatWallGeometry, wallMaterial);
 var wallLeft = new THREE.Mesh(sideWallGeometry, wallMaterial);
 var wallRight = new THREE.Mesh(sideWallGeometry, wallMaterial);
-var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 
-cube.position.set(5, 5, 10);
-wallTop.position.set(0, 10, 500);
-wallBottom.position.set(0, -10, 500);
-wallLeft.position.set(-10, 0, 500);
-wallRight.position.set(10, 0, 500);
+wallTop.position.set(0, 8.333, 500);
+wallBottom.position.set(0, 0, 500);
+wallLeft.position.set(-6, 4.166, 500);
+wallRight.position.set(6, 4.166, 500);
 
 wallTop.rotation.set((90 * (Math.PI / 180)), 0, 0);
 wallBottom.rotation.set((-90 * (Math.PI / 180)), 0 , 0);
 wallLeft.rotation.set(0, (90 * (Math.PI / 180)), 0);
 wallRight.rotation.set(0, (-90 * (Math.PI / 180)), 0);
 
-scene.add(cube);
 scene.add(wallTop);
 scene.add(wallRight);
 scene.add(wallBottom);
