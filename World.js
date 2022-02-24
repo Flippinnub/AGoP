@@ -262,6 +262,7 @@ scene.add(Lockers);
 //Objects
 const sideWallGeometry = new THREE.PlaneGeometry(1000, 8.333);
 const flatWallGeometry = new THREE.PlaneGeometry(12, 1000);
+const backWallGeometry = new THREE.PlaneGeometry(12, 8.333);
 
 const wallMaterial = new THREE.MeshStandardMaterial({color: 0xa4a4a4, side: THREE.FrontSide});
 
@@ -269,18 +270,22 @@ var wallTop = new THREE.Mesh(flatWallGeometry, wallMaterial);
 var wallBottom = new THREE.Mesh(flatWallGeometry, wallMaterial);
 var wallLeft = new THREE.Mesh(sideWallGeometry, wallMaterial);
 var wallRight = new THREE.Mesh(sideWallGeometry, wallMaterial);
+var wallBack = new THREE.Mesh(backWallGeometry, wallMaterial)
 
 wallTop.position.set(0, 8.333, 500);
 wallBottom.position.set(0, 0, 500);
 wallLeft.position.set(-6, 4.166, 500);
 wallRight.position.set(6, 4.166, 500);
+wallBack.position.set(0, 4.166, 0);
 
 wallTop.rotation.set((90 * (Math.PI / 180)), 0, 0);
 wallBottom.rotation.set((-90 * (Math.PI / 180)), 0 , 0);
 wallLeft.rotation.set(0, (90 * (Math.PI / 180)), 0);
 wallRight.rotation.set(0, (-90 * (Math.PI / 180)), 0);
+wallBack.rotation.set(0, 0, 0);
 
 scene.add(wallTop);
 scene.add(wallRight);
 scene.add(wallBottom);
 scene.add(wallLeft);
+scene.add(wallBack);
