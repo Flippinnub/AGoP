@@ -1,4 +1,13 @@
 //Animate
+
+const controls = new FirstPersonControls(camera, renderer.domElement, scene);
+
+controls.addEventListener( 'change', function () {
+
+	renderer.render( scene, camera );
+
+} );
+
 function animate() {
 	requestAnimationFrame(animate);
     
