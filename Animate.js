@@ -1,18 +1,8 @@
 //Animate
-
-const controls = new FirstPersonControls(camera, renderer.domElement, scene);
-
-controls.addEventListener( 'change', function () {
-
-	renderer.render( scene, camera );
-
-} );
-
 function animate() {
 	requestAnimationFrame(animate);
-    
-    camera.position.z += 0.5;
-
+    if (controls.enabled == false) {camera.position.z += 0.5;}
+    controls.update();
     renderer.render(scene, camera);
 };
 

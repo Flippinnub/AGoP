@@ -12,3 +12,10 @@ camera.position.set(0, 5, 0);
 controls.update();
 camera.rotation.set(180 * (Math.PI/180), 0, -(Math.PI));
 scene.add(camera);
+
+const controls = new FirstPersonControls(camera, renderer.domElement, scene);
+controls.enabled = true;
+
+controls.addEventListener( 'change', function () {
+    renderer.render( scene, camera );
+} );
