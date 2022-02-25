@@ -1,0 +1,12 @@
+Theory 1:
+  Protaganist: Charlie
+    IQ: 195
+    Age: 12
+    Grade: 6th
+    Description: Ben is an EXETREMELY intelligent kid, so much so that some people would call him a genius. However, due to an undiagnosed case of ADHD, he is held back
+    at Merriville Distric Middle School. Despite his ADHD not letting him pay attention in class, his intelligence allows him to maintain mediocre grades.
+    Loves: Aviation, technology, engineering, etc.
+    Hates: School (thinks it's boring)
+  Setting: Merriville Distric Middle School
+    Description: Seemingly normal middle school...
+  Antaganist: ?
