@@ -11,3 +11,5 @@ var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHe
 camera.position.set(0, 3, 0);
 camera.rotation.set(180 * (Math.PI/180), 0, -(Math.PI));
 scene.add(camera);
+
+const loader = new THREE.TextureLoader();
