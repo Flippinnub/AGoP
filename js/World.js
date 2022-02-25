@@ -40,6 +40,20 @@ scene.add(Lights);
 
 
 //Lockers
+const lockerBlockGeometry = new THREE.BoxGeometry(1, 4, 12);
+
+const lockerMaterials = [
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-1.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-2.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-3.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-4.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-5.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-6.jpg')}),
+];
+
+var lockerBlock = new THREE.Mesh(lockerBlockGeometry, lockerMaterials);
+lockerBlock.position.set(1, 2, 10);
+
 var Lockers = new THREE.Group();
 
 const lockerGeometry = new THREE.BoxGeometry(1, 4, 0.9);
