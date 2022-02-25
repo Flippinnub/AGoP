@@ -287,5 +287,5 @@ wallBack.rotation.set(0, 0, 0);
 scene.add(wallTop);
 scene.add(wallRight);
 scene.add(wallBottom);
-scene.add(wallLeft;
+scene.add(wallLeft);
 scene.add(wallBack);
