@@ -45,7 +45,7 @@ const lockerBlockGeometry = new THREE.BoxGeometry(1, 4, 12);
 const lockerMaterials = [
     new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerRow.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerBlockTop.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerVisibleSide.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerVisibleSide.jpg')}),
