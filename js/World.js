@@ -43,12 +43,12 @@ scene.add(Lights);
 const lockerBlockGeometry = new THREE.BoxGeometry(1, 4, 12);
 
 const lockerMaterials = [
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-1.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-2.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-3.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-4.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-5.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('resources/images/flower-6.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerRow.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerUnseen.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerVisibleSide.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('Assets/Textures/LockerVisibleSide.jpg')}),
 ];
 
 var lockerBlock = new THREE.Mesh(lockerBlockGeometry, lockerMaterials);
