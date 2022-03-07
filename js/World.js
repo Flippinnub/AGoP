@@ -52,7 +52,7 @@ const lockerMaterials = [
 ];
 
 var lockerBlock = new THREE.Mesh(lockerBlockGeometry, lockerMaterials);
-lockerBlock.position.set(1, 2, 10);
+lockerBlock.position.set(1, 2, 30);
 
 var Lockers = new THREE.Group();
 
