@@ -50,7 +50,7 @@ const lockerMaterials = [
     new THREE.MeshBasicMaterial({map: loader.load('https://flippinnub.github.io/AGoP/Assets/Textures/LockerVisibleSide.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('https://flippinnub.github.io/AGoP/Assets/Textures/LockerVisibleSide.jpg')}),
 ];
-
+if (lockerMaterials) {console.log("Textures should work")};
 var lockerBlock = new THREE.Mesh(lockerBlockGeometry, lockerMaterials);
 lockerBlock.position.set(1, 2, 30);
 
